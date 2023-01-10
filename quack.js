@@ -11,3 +11,22 @@
  * 
  * Bonus: implement the methods such that they take O(1) constant time.
  */
+
+// Simple Quack with built in functions
+class Quack {
+  constructor(...values) {
+    this.values = values;
+  };
+
+  push(value) {
+    this.values.unshift(value);
+  };
+
+  pop() {
+    return this.values.shift();
+  };
+
+  pull() {
+    return this.values.pop();
+  };
+};
