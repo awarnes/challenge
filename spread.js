@@ -24,3 +24,9 @@ const addThenMultiply = (add1, add2, multiply) => (add1 + add2) * multiply;
 const inputs = [1, 2, 3];
 // -> 9
 console.log(addThenMultiply(...inputs));
+
+// We can also use the spread operator to merge objects together
+const defaults = {a: 1, b: 2};
+const overrides = {b: 3, c: 4};
+// > {a: 1, b: 3, c: 4}
+const merged = {...defaults, ...overrides}
