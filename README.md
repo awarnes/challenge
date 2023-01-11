@@ -3,7 +3,7 @@
 Thank you for taking the time to review my responses! If you have any questions please feel free to reach out at warnes.alexander@gmail.com. I look forward to hearing back!
 
 1. [JavaScript Classes](./classes.md)
-1. [Closures](./closures.js)
+1. [Closures](./closures.md)
 1. [Capitalize](./capitalize.js)
 1. [Promises](./promises.md)
 1. [Spread](./spread.js)
