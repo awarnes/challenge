@@ -25,7 +25,7 @@ const App = () => {
 ```
 
 ### Answer:
-Defining a component is generally an anti-pattern that will cause bugs. The primary issue is that each time the `App` component is rerendered the `HostNameField` will be re-defined and instantiated meaning that it will lose its state and revert to its base form.
+Defining a component inside another component is generally an anti-pattern that will cause bugs. The primary issue is that each time the `App` component is rerendered the `HostNameField` will be re-defined and instantiated meaning that it will lose its state and revert to its base form.
 
 For instance if we had a `button` in the `App` component that incremented a counter. Every time we clicked that button it would reset the state in the `HostNameField`:
 
@@ -50,7 +50,7 @@ const App = () => {
 }
 ```
 
-In order to solve this we can simply move the definition for the `HostNameField` component outside of the `App` component. This will allow them it to live separately without having to worry about it getting redefined every time we update the `App` component.
+In order to solve this we can simply move the definition for the `HostNameField` component outside of the `App` component. This will allow it to live separately without having to worry about it getting redefined every time we update the `App` component.
 
 ```javascript
 const HostNameField = () => {

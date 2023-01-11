@@ -79,9 +79,9 @@ class Vehicle {
 };
 ```
 
-However, we would quickly be combining a bunch of unrelated code into a single class. When we instantiate a Vehicle we wouldn't actually be using a lot of the code we'd written (though maybe we'd have a pretty cool flying car?).
+However, we would quickly be combining a bunch of unrelated code into a single class. When we instantiate a `Vehicle` we wouldn't actually be using a lot of the code we'd written (though maybe we'd have a pretty cool flying car?).
 
-This is where inheritance comes in. When we have these different sub-types of Vehicle we can use inheritance to keep the common functionality centralized in the base class but _extend_ the specific functionality into other classes.
+This is where inheritance comes in. When we have these different sub-types of `Vehicle` we can use inheritance to keep the common functionality centralized in the base class but _extend_ the specific functionality into other classes. Here we'll use the `extends` keyword to inherit the functionality from the `Vehicle` class to be used in the more specific `Car` class.
 
 ```javascript
 class Car extends Vehicle {

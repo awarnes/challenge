@@ -40,7 +40,7 @@ const AppB = () => {
 ```
 
 ### Answer
-At a base level all React components are objects or functions. We can call a function whenever we want to execute the code inside. If, as in this case, the function returns some JSX we can use that to display information on the screen.
+At a base level all React components are objects or functions. We can call a function whenever we want to execute the code inside of it. If, as in this case, the function returns some JSX we can use that to display information on the screen.
 
 One of the fancy things that React adds as a framework is a set of optimized lifecycle methods that help our program manage data and views as efficiently as possible. The child component, `HostNameField`, is making use of the React functionality and lifecycle methods with the `useState('')` hook. Whenever the value in the box is updated we store the state and re-render that specific component with the updated value without having to re-render/calculate the rest of the page.
 
@@ -59,4 +59,4 @@ const renderUnorderedList = list => (
 )
 ```
 
-This function doesn't need to maintain state or rely particularly heavily on any React lifecylce methods. Instead it will just simply spit out JSX as needed.
+As simply a display function, it doesn't need to maintain state or rely particularly heavily on any React lifecycle methods. Instead it will just simply spit out JSX as needed.

@@ -18,17 +18,17 @@ class Quack {
     this.values = values;
   };
 
-  // Should be O(n)
+  // O(N)
   push(value) {
     this.values.unshift(value);
   };
 
-  // Should be O(n)
+  // O(N)
   pop() {
     return this.values.shift();
   };
 
-  // Should be O(n)
+  // O(1)
   pull() {
     return this.values.pop();
   };
@@ -85,7 +85,7 @@ class FancyQuack {
     return null;
   }
 
-  // Should be O(1)
+  // O(1)
   push(value) {
     const oldFirst = this.first;
     if (!oldFirst) {
@@ -97,7 +97,7 @@ class FancyQuack {
     }
   };
 
-  // Should be O(1)
+  // O(1)
   pop() {
     const oldFirst = this.first;
     if (oldFirst && oldFirst.next) {
@@ -111,7 +111,7 @@ class FancyQuack {
     return oldFirst.value;
   };
 
-  // Should be O(1)
+  // O(1)
   pull() {
     const oldLast = this.last;
     if (oldLast && oldLast.previous) {

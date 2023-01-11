@@ -18,7 +18,7 @@ const Counter = () => {
 }
 ```
 
-When we want to send data back to the parent component we can use bound functions that when called on the child will update the data stored as state in the parent. We're already practically doing that above with the `<button />` components. To be more explicit about it we might use have a special component that handles specific styles and such:
+When we want to send data back to the parent component we can use bound functions that when called on the child will update the data stored as state in the parent. We're already practically doing that above with the `<button />` components. To be more explicit about it, say we have a special component that handles specific styles and such:
 
 ```javascript
 const Counter = () => {
@@ -50,4 +50,4 @@ const SpecialButton = (props) => {
 };
 ```
 
-By passing in this function defined in the parent component (often called a `handler`), it can be called in the child component to pass data from the child back up to the parent. In this example we create specific functions to increment and decrement the count. However, that's not necessary and we could pass the original `() => setCount(count +|- 1)` function to the child component.
+By passing in this function defined in the parent component (often called a `handler`), it can be called in the child component to pass data from the child back up to the parent. In this example we create specific functions to increment and decrement the count.
