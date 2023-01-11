@@ -10,6 +10,6 @@ Thank you for taking the time to review my responses! If you have any questions 
 1. [Deduplicate and Sort](./dedup-and-sort.js)
 1. [Passing Data in React](./react.md)
 1. [HostNameField Rendering](./host-name-field-rendering.md)
-1. [Nesting React](./nesting-react.jsx)
+1. [Nesting React](./nesting-react.md)
 1. [Quack](./quack.js)
 1. [Twitter](./twitter.js)

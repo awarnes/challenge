@@ -35,8 +35,7 @@ class Quack {
 };
 
 // Fancy (?) Quæck using a doubly linked list
-
-class Node {
+class QuackNode {
   constructor(
     value = null,
     next = null,
@@ -82,7 +81,7 @@ class FancyQuack {
     return values;
   }
 
-  set values(value) {
+  set values(_) {
     return null;
   }
 
