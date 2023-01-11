@@ -4,7 +4,6 @@
  * for nesting React components; and how would you fix it?
  */
 
-
 const App = () => {
   const HostNameField = () => {
     const [value, setValue] = useState('');

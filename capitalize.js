@@ -7,9 +7,9 @@ const aString = 'hello';
 
 const bString = 'hello world';
 
-const capitalize1 = string => string.slice(0, 1).toUpperCase() + string.slice(1);
+const capitalize1 = string => string[0].toUpperCase() + string.slice(1);
 
-// Technically capitalizing more than the first letter in the given string
+// Capitalizing the first letter of each word in a string.
 const capitalize2 = string => string
   .split(' ')
   .map(str => str[0].toUpperCase() + str.slice(1))
