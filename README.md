@@ -8,7 +8,7 @@ Thank you for taking the time to review my responses! If you have any questions 
 1. [Promises](./promises.md)
 1. [Spread](./spread.js)
 1. [Deduplicate and Sort](./dedup-and-sort.js)
-1. [Passing Data in React](./react.jsx)
+1. [Passing Data in React](./react.md)
 1. [HostNameField Rendering](./host-name-field-rendering.md)
 1. [Nesting React](./nesting-react.jsx)
 1. [Quack](./quack.js)
