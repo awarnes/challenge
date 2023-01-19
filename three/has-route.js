@@ -5,10 +5,36 @@
  */
 
 // 4x3
+
+// hasPath => true
 const testGrid1 = [
-  ['>', '>', '>'],
+  ['>', '>', 'V'],
   ['>', '^', 'V'],
   ['V', '<', '<'],
+  ['>', '>', 'V'],
+];
+
+// hasPath => false (small loop)
+const testGrid2 = [
+  ['>', '>', '<'],
+  ['>', '^', 'V'],
+  ['V', '<', '<'],
+  ['>', '>', 'V'],
+];
+
+// hasPath => false (large loop)
+const testGrid3 = [
+  ['>', '>', 'V'],
+  ['>', '^', '<'],
+  ['V', '<', '<'],
+  ['>', '>', 'V'],
+];
+
+// hasPath => false (off grid)
+const testGrid4 = [
+  ['>', '>', 'V'],
+  ['>', '^', 'V'],
+  ['<', '<', '<'],
   ['>', '>', 'V'],
 ];
 
@@ -24,17 +50,15 @@ const hasPath = (start, end, grid) => {
     const direction = grid[current[0]][current[1]];
     current = moveOnPath(current, direction);
 
-    // if off grid, return false
-    if ((current[0] < 0 || current[0] === grid.length) &&
+    // if off grid, break
+    if ((current[0] < 0 || current[0] === grid.length) ||
       (current[1] < 0 || current[1] === grid[0].length)
     ) {
-      console.log('off grid')
       break;
     }
 
-    // if visited.includes(current), return false
+    // if already visted, break
     if (visited.some(node => node[0] === current[0] && node[1] === current[1])) {
-      console.log('visited')
       break;
     }
   }
@@ -56,3 +80,6 @@ const moveOnPath = (current, direction) => {
 };
 
 console.log(hasPath(testStart1, testEnd1, testGrid1))
+console.log(hasPath(testStart1, testEnd1, testGrid2))
+console.log(hasPath(testStart1, testEnd1, testGrid3))
+console.log(hasPath(testStart1, testEnd1, testGrid4))
